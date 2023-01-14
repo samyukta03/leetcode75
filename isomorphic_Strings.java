@@ -19,6 +19,7 @@ public class isomorphic_Strings {
     //-----Soln: TC: O(n) SC ? 
     public boolean isISomorphic(String s, String t){
         boolean flag = true ;
+
         HashMap<Character,Character>m = new HashMap<Character,Character>();
         if(s.length()!=t.length()) return false;
         else if(s.length()==t.length()){
