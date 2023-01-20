@@ -14,5 +14,6 @@ public class linkedlistcycle2 {
            slow = slow.next;
        }
        return head;
-}
+        //tc:O(n) SC:O(1)
+    }
 }
