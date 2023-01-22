@@ -1,5 +1,8 @@
 import java.util.*;
 public class N_ary_Tree_BFS extends Node {
+    /* -----------DIFF IN USING STACK & QUEUE
+    * In a queue-based algorithm, the nodes are visited in a breadth-first order, while in a stack-based algorithm, the nodes are visited in a depth-first order.
+    */ 
     public void preorder_Queue(Node root) {
         // Create an empty queue and empty list
         Queue<Node> queue = new LinkedList<Node>();
@@ -41,3 +44,8 @@ public class N_ary_Tree_BFS extends Node {
         return output;
     }
 }
+//------------complexity analysis:
+/*
+ * TC: Both stack and queue has tc of O(n) where n is the number of nodes and we visit each node once
+ * SC: Both has O(n) maximum number of nodes that can be stored in the queue or stack at any given time is equal to the total number of nodes at the widest level in the tree.
+ */
